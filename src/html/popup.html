@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="../css/app.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-4 col-sm-4 col-md-4 col-xs-offset-8 col-sm-offset-8 col-md-offset-8">
+					<a href="http://megalodon.jp/">WEB魚拓サイトへ</a>
+				</div>
+			</div>
+			<div class="page-header col-xs-12 col-sm-12 col-md-12" style="margin-top: 0px;">
+				<h2>このページの魚拓一覧</h2>
+			</div><!-- .page-header -->
+			<div class="row result-container">
+				<div class="col-xs-10 col-sm-10 col-md-10 col-xs-offset-1 col-md-offset-1 col-sm-offset-1">
+					<div class="current-archive-container">
+						魚拓はありません
+					</div>
+					<div id="currentLoading" class="loading-container disabled">
+						<div class="loading-box">
+							<div class="loading">
+								<div class="loading-bar"></div>
+								<div class="loading-bar"></div>
+								<div class="loading-bar"></div>
+								<div class="loading-bar"></div>
+								<div class="loading-bar"></div>
+								<div class="loading-bar"></div>
+							</div><!-- #currentLoading -->
+						</div><!-- .loader-box -->
+					</div><!-- .loading-container -->
+				</div>
+			</div><!-- .row -->
+
+			<div class="page-header col-xs-12 col-sm-12 col-md-12">
+				<h2>特定のページの魚拓を検索</h2>
+			</div><!-- .page-header -->
+			<div class="row">
+				<form id="searchForm">
+					<div class="col-xs-12 col-sm-10 col-md-10">
+						<input name="url" class="form-control" type="text" maxlength="150" id="urlinput" placeholder="URLを入力します"/>
+					</div>
+					<div class="col-xs-12 col-sm-2 col-md-2">
+						<input type="submit" class="btn btn-info btn-block" value="検索と確認" />
+					</div>
+				</form>
+			</div><!-- .row -->
+			<div class="row">
+				<div class="result-container col-xs-10 col-sm-10 col-md-10 col-xs-offset-1 col-md-offset-1 col-sm-offset-1">
+					<div class="search-result-container">
+						魚拓はありません
+					</div>
+					<div id="searchLoading" class="loading-container disabled">
+						<div class="loading-box">
+							<div class="loading">
+								<div class="loading-bar"></div>
+								<div class="loading-bar"></div>
+								<div class="loading-bar"></div>
+								<div class="loading-bar"></div>
+								<div class="loading-bar"></div>
+								<div class="loading-bar"></div>
+							</div><!-- #searchLoading -->
+						</div><!-- .loader-box -->
+					</div><!-- .loading-container -->
+				</div>
+			</div><!-- .row -->
+
+			<div style="margin-bottom: 16px;"></div>
+		</div><!-- .container-->
+
+		<script type="text/javascript" src="../js/vendor/jquery.js"></script>
+		<script type="text/javascript" src="../js/vendor/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../js/app/main.js"></script>
+	</body>
+</html>
